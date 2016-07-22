@@ -1,6 +1,14 @@
+@font-face {
+  font-family: 'droidsansmono';
+
+  src: url('../fonts/droidsansmono.woff2') format('woff2'), url('../fonts/droidsansmono.woff') format('woff'), url('../fonts/droidsansmono.ttf') format('truetype');
+}
+
 body {
+    font-family: 'droidsansmono';
 	overflow: hidden;
 }
+
 .main_body {
     display: block;
     position: absolute;
@@ -11,4 +19,22 @@ body {
     background-size: cover;
     background-position: center;
     transform: scale(1.05);
+}
+
+input[name="email"] {
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+button.email_enter {
+    display: block;
+    height: 40px;
+}
+
+.homer {
+    position: fixed;
+    height: 400px;
+    bottom: -400px;
+    left: 5%;
 }
