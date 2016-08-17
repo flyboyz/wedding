@@ -25,7 +25,7 @@ $(document).ready(function() {
 		$('.flip-container').addClass('blocked');
 		$(this).keydown(function(e) {
 	        if (e.which == 27){
-	        	$('.flip-container').removeClass('blocked');
+	        	$(this).blur();
 	        }
 	    });
 	}).on('blur', function() {
